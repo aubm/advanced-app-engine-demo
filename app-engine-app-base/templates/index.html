@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+    <title>My Company Directory</title>
+    <style>
+        table {
+            border:solid #000 !important;
+            border-width:1px 0 0 1px !important;
+        }
+        th, td {
+            border:solid #000 !important;
+            border-width:0 1px 1px 0 !important;
+        }
+        tr, td {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>My Company Directory</h1>
+
+<h2>Employees</h2>
+
+<table>
+    <thead>
+    <tr>
+        <td>Name</td>
+        <td>Position</td>
+        <td>Email</td>
+        <td>Phone</td>
+    </tr>
+    </thead>
+    <tbody>
+    {% for e in employees %}
+    <tr>
+        <td>{{ e.name }}</td>
+        <td>{{ e.position }}</td>
+        <td>{{ e.email }}</td>
+        <td>{{ e.phone }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+</body>
+</html>

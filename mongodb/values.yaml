@@ -1,0 +1,7 @@
+mongodbRootPassword: root
+mongodbUsername: directory
+mongodbPassword: directory
+mongodbDatabase: directory
+
+service:
+  type: LoadBalancer
